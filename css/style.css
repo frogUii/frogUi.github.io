@@ -1,0 +1,234 @@
+:root{
+    --bg-color: #161925;
+    --font-color: #F3F4ED;
+    --secondary-color: #161925;
+    --secondary-color-dark: #303449;
+    --alternative: #4f5171;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    color: var(--font-color);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+}
+
+#logo-alura {
+    width: 170px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-input {
+    width: 60%;
+    height: 100%;
+    background-color: var(--alternative);
+    margin: 0 auto;
+    padding-top: 80px;
+    box-sizing: border-box;
+    border-radius: 12px;
+}
+
+.section-input-area {
+    width: 80%;
+    height: 70%;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    resize: none;
+    background: none;
+    outline: none;
+    text-align: center;
+    font-size: 25px;
+    border: none;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+.section-input-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.btn-encrypt, .btn-descrypt, .btn-copy {
+    width: 25%;
+    height: 40px;
+    background-color: var(--bg-color);
+    border-radius:28px;
+    border:1px solid var(--secondary-color-dark);
+    cursor:pointer;
+    color:#f3f4ed;
+    font-size:15px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #f3f4ed;
+}
+
+.btn-encrypt:hover, .btn-descrypt:hover, .btn-copy:hover {
+    background-color: var(--secondary-color-dark);
+}
+
+.btn-encrypt:active, .btn-descrypt:active, .btn-copy:active {
+    position:relative;
+    top:1px;
+}
+
+.section-result {
+    width: 20%;
+    background-color: var(--alternative);
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.section-result-munieco {
+    width: 100%;
+    height: 60%;
+    box-sizing: border-box;
+    padding-top: 100px;
+    overflow: auto;
+}
+
+.section-result-h3 {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 10px;
+    width: 100%;
+    height: 20%;
+}
+
+.section-result-parrafo {
+    padding: 10px 5px;
+    width: 100%;
+    height: 80%;
+    box-sizing: border-box;
+}
+
+.section-result-2 {
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.section-result-2 h3 {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.section-result-text {
+    padding-top: 20px;
+    width: 80%;
+    margin: auto;
+    resize: none;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    height: 80%;
+    text-align: justify;
+}
+
+.section-result-copy {
+    width: 100%;
+    height: 20%;
+}
+
+.btn-copy {
+    width: 40%;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: var(--bg-color);
+}
+
+.ocultar {
+    display: none;
+}
+
+@media screen and (max-width: 940px) {
+    
+    #logo-alura {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .section-input {
+        width: 90%;
+        margin-bottom: 20px;
+        padding-bottom: 35px;
+        margin-top: 20px;
+    }
+
+    .section-input-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        border: 10px 20px;
+    }
+
+    .btn-encrypt {
+        margin-bottom: 5px;
+        width: 50%;
+    }
+
+    .btn-descrypt {
+        width: 50%;
+    }
+
+    .btn-copy {
+        width: 50%;
+    }
+
+    .section-result {
+        width: 70%;
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+    }
+
+    .section-result-h3 {
+        margin-top: 40px;
+    }
+
+    .section-result-h3, .section-result-parrafo {
+        padding-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .section-result-munieco {
+        display: none;
+    }
+
+
+}

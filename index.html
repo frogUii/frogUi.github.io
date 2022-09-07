@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Encriptador Alura</title>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" alt="logo alura" id="logo-alura">
+	</header>
+
+	<main>
+		<section class="section-input">
+			<textarea placeholder="Ingrese el texto aquí..." class="section-input-area" ></textarea>
+			<div class="section-input-btn">
+				<input type="button" class="btn-encrypt" value="Encriptar">
+				<input type="button" class="btn-descrypt" value="Desencriptar">
+			</div>
+		</section>
+		<section class="section-result">
+			<div class="container-munieco">
+				<img src="img/munieco.png" alt="munieco" class="section-result-munieco">
+			</div>
+			<div class="section-result-h3">
+				<p>Ningún mensaje fue encontrado.</p>
+			</div>
+			<div class="section-result-parrafo">
+				<p>Ingresa el texto que desea encriptar o desencriptar</p>
+			</div>
+		
+			<div class="section-result-2">
+				<h3>Mensaje encriptado:</h3>
+				<textarea class="section-result-text" id="resultado" name="text"></textarea>
+			</div>
+			<div class="section-result-copy">
+				<input type="button" class="btn-copy" value="Copiar">
+			</div>
+		</section>
+	</main>
+
+	<footer>
+	</footer>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
